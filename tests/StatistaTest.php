@@ -37,8 +37,7 @@ final class StatistaClassTest extends TestCase
           array(15, "FizzBuzz"),
           array(50, "Buzz"),
           array(90, "FizzBuzz"),
-          array(100, "Buzz"),
-          array("test", ""),
+          array(100, "Buzz")
         );
     }
 }
