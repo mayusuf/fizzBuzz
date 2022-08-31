@@ -16,12 +16,29 @@ final class StatistaClassTest extends TestCase
         $this->statista = null;
     }
 
-    public function testFindFizzBuzz() {
+    /**
+     * @dataProvider provider
+     */
+    public function testFindFizzBuzz($input,$expected) {
         
-        $input = 15;
-        $output = "FizzBuzz";
+        /*$input = 3;
+        $expected = "Fizz";*/
 
-        $this->assertEquals($this->statista->findFizzBuzz($input),$output);
+        $this->assertEquals($this->statista->findFizzBuzz($input),$expected);
         
+    }
+
+    public function provider()
+    {
+        return array(
+          array(4, 4),
+          array(7, 7),
+          array(25, "Buzz"),
+          array(15, "FizzBuzz"),
+          array(50, "Buzz"),
+          array(90, "FizzBuzz"),
+          array(100, "Buzz"),
+          array("test", ""),
+        );
     }
 }

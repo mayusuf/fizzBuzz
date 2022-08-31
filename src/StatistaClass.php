@@ -8,14 +8,18 @@ namespace App;
  */
 final class StatistaClass
 {	
-	private $start = 1;
-	private $end = 100;
+	private int $start = 1;
+	private int $end = 100;
 
-	public function findFizzBuzz($number): string
+	/**
+    * @param int $number
+    * @return string
+    */
+	public function findFizzBuzz(int $number): string
 	{
 		$res = "";
 
-		if($number!=NULL && is_numeric($number) && ($number >0)){
+		if($number >0){
 
 			if($number%15 === 0){
 
@@ -39,6 +43,9 @@ final class StatistaClass
 		return $res;
 	}
 
+	/**
+    * @return void
+    */
 	public function printFizzBuzzOneToHundred(): void
 	{
 		
