@@ -11,7 +11,7 @@ final class StatistaClass
 	private $start = 1;
 	private $end = 100;
 
-	public function findFizzBuzz($number) :string
+	public function findFizzBuzz($number): string
 	{
 		$res = "";
 
@@ -39,7 +39,7 @@ final class StatistaClass
 		return $res;
 	}
 
-	public function printFizzBuzzOneToHundred():void
+	public function printFizzBuzzOneToHundred(): void
 	{
 		
 		if($this->start <=0) exit();

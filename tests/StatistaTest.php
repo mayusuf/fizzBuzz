@@ -18,7 +18,7 @@ final class StatistaClassTest extends TestCase
 
     public function testFindFizzBuzz() {
         
-        $input = 120;
+        $input = 15;
         $output = "FizzBuzz";
 
         $this->assertEquals($this->statista->findFizzBuzz($input),$output);
