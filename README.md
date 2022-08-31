@@ -11,7 +11,7 @@
 
 # Installation And Run Application
 
-1. Clone all files from github:"https://github.com/mayusuf/fizzBuzz.git"
+1. Clone or download all files from github:"https://github.com/mayusuf/fizzBuzz.git"
 
 2. run command "docker-compose up". It creates php-apache container. please install docker if you don't have in your pc.
 
